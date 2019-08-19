@@ -14,8 +14,6 @@ class Flight(GeoPosicion):
         self.__number = number
         
     def render(self, canvas):
-        
-            
         if self._ele==None:
             x0 = int(((self.get_lon()+180)*canvas.w)/360.0)
             y0 = canvas.h - int(((self.get_lat()+90)*canvas.h)/180.0)
