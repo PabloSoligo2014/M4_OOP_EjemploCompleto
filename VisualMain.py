@@ -31,19 +31,10 @@ class Application(Frame):
         self.__canvas.h = h
         self.__canvas.w = w
         
-        
-        
-        
         #self.__canvas.create_text((20, 20), text="Hola que tal", fill="black", anchor="nw")
         self.__canvas.create_image(0, 0, image=background_image, state="normal", anchor=NW)
-        
-        
         self.__canvas.pack()
-        
-        
         self._elements = elements
-        
-                    
         self.createWidgets()
 
     def createWidgets(self):
@@ -60,8 +51,6 @@ class Application(Frame):
         #self.__canvas.create_image(60, 60, image=car_image)
         
         self.after(1000, self.onUpdate)
-
-
 
 
 

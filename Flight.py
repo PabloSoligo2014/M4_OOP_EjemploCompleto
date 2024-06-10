@@ -24,8 +24,7 @@ class Flight(GeoPosicion):
             self._text = canvas.create_text(x0, y0, text=self.__number, fill="white")
             #= canvas.create_image(x0, y0, image=a_image)
         else:
-            
-            
+                     
             self.set_lon(self.get_lon()+random.randrange(0,90)*0.01)
             
             x0 = int(((self.get_lon()+180)*canvas.w)/360.0)
